@@ -5,7 +5,7 @@ const baseURL =
   process.env.VIKEY_BASE_URL?.trim() || "https://api.vikey.ai/v1";
 
 export const vikeyModelId =
-  process.env.VIKEY_MODEL?.trim() || "deepseek/deepseek-v4.1-flash";
+  process.env.VIKEY_MODEL?.trim() || "deepseek/deepseek-v4-flash";
 
 export const vikey = createOpenAI({ apiKey, baseURL }).chat(vikeyModelId, {
   reasoningEffort: "low",
